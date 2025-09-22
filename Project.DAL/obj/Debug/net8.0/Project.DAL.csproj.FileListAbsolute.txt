@@ -1,0 +1,12 @@
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.deps.json
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.dll
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\bin\Debug\net8.0\Project.DAL.pdb
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.csproj.AssemblyReference.cache
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.AssemblyInfoInputs.cache
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.AssemblyInfo.cs
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.csproj.CoreCompileInputs.cache
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.dll
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\refint\Project.DAL.dll
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\Project.DAL.pdb
+D:\Study\3ndCourse\1stSemerter\.Net\Project\Project.DAL\obj\Debug\net8.0\ref\Project.DAL.dll
