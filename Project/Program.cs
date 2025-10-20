@@ -1,71 +1,128 @@
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Project.DAL.Repositories.Interfaces;
-using Project.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Project.DAL;
+using Project.DAL.Uow;
 using Project.BLL.Mapping;
-using Project.BLL.Services.Interfaces;
+using Project.BLL.Services;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Serilog;
+using System.Net;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
-var configuration = builder.Configuration;
-var conn = configuration.GetConnectionString("Default");
+builder.Host.UseSerilog();
 
+var connectionString = builder.Configuration.GetConnectionString("Postgres")
+    ?? "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=postgres";
 
-builder.Services.AddSingleton<IDbConnectionFactory>(sp => new NpgsqlConnectionFactory(conn));
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>(sp => new UnitOfWork(sp.GetRequiredService<IDbConnectionFactory>()));
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseNpgsql(connectionString, npgsql =>
+    {
+        npgsql.MigrationsHistoryTable("__EFMigrationsHistory", "orders");
+    });
+});
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<CustomerService>();
+builder.Services.AddScoped<OrderService>();
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<SupplierService>();
+builder.Services.AddScoped<PaymentService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddScoped<IOrderService, Project.BLL.Services.OrderService>();
-
+builder.Services.AddFluentValidationAutoValidation()
+                .AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddControllers()
     .ConfigureApiBehaviorOptions(options =>
     {
         options.InvalidModelStateResponseFactory = context =>
         {
-            var problem = new ValidationProblemDetails(context.ModelState);
-            return new BadRequestObjectResult(problem);
+            var problemDetails = new ValidationProblemDetails(context.ModelState)
+            {
+                Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+                Title = "Validation errors occurred.",
+                Status = (int)HttpStatusCode.BadRequest
+            };
+            return new BadRequestObjectResult(problemDetails);
         };
-    })
-    .AddNewtonsoftJson();
+    });
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-
-app.UseExceptionHandler(errApp =>
+builder.Services.AddCors(options =>
 {
-    errApp.Run(async context =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        context.Response.ContentType = "application/problem+json";
-        var exFeature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>();
-        var ex = exFeature?.Error;
-
-        var pd = new ProblemDetails
-        {
-            Title = ex?.GetType().Name ?? "Error",
-            Detail = ex?.Message,
-            Status = 500,
-            Instance = context.Request.Path
-        };
-
-        if (ex is KeyNotFoundException) pd.Status = 404;
-        else if (ex is ArgumentException) pd.Status = 400;
-
-        context.Response.StatusCode = pd.Status.Value;
-        await System.Text.Json.JsonSerializer.SerializeAsync(context.Response.Body, pd, pd.GetType(), new System.Text.Json.JsonSerializerOptions { PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase });
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
     });
 });
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "Dropship API",
+        Version = "v1",
+        Description = "Full-featured Drop Shipping API with multi-schema PostgreSQL, EF Core, Dapper, and UoW"
+    });
+});
+builder.Services.AddProblemDetails(opts =>
+{
+    opts.CustomizeProblemDetails = ctx =>
+    {
+        ctx.ProblemDetails.Extensions["traceId"] = ctx.HttpContext.TraceIdentifier;
+    };
+});
+
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseExceptionHandler("/error");
+    app.UseHsts();
+}
 
-app.UseRouting();
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        var exceptionHandler = context.Features.Get<IExceptionHandlerFeature>();
+        var exception = exceptionHandler?.Error;
+
+        var problem = new ProblemDetails
+        {
+            Status = (int)HttpStatusCode.InternalServerError,
+            Title = "An unexpected error occurred.",
+            Detail = exception?.Message,
+            Instance = context.Request.Path
+        };
+
+        context.Response.StatusCode = problem.Status.Value;
+        context.Response.ContentType = "application/problem+json";
+        await context.Response.WriteAsJsonAsync(problem);
+    });
+});
+
+app.UseSerilogRequestLogging();
+app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();

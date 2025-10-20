@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PQtdyDsESe8=",
+  "success": true,
+  "projectFilePath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/gabriel/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,339 @@
+2025-10-20 10:22:59.530 +03:00 [INF] Now listening on: http://localhost:5110
+2025-10-20 10:22:59.635 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 10:22:59.637 +03:00 [INF] Hosting environment: Development
+2025-10-20 10:22:59.637 +03:00 [INF] Content root path: /home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project
+2025-10-20 10:22:59.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5110/swagger/index.html - null null
+2025-10-20 10:23:00.066 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5110/swagger/index.html - 200 null text/html;charset=utf-8 268.207ms
+2025-10-20 10:23:00.128 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5110/swagger/swagger-ui-bundle.js - null null
+2025-10-20 10:23:00.175 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-20 10:23:00.180 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5110/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 53.1411ms
+2025-10-20 10:23:00.399 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5110/swagger/v1/swagger.json - null null
+2025-10-20 10:23:00.568 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5110/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.2827ms
+2025-10-20 10:23:33.677 +03:00 [INF] Application is shutting down...
+2025-10-20 11:32:57.589 +03:00 [ERR] Failed executing DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM orders."__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-20 11:39:55.870 +03:00 [ERR] Failed executing DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM orders."__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-20 11:39:56.231 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-10-20 11:39:56.247 +03:00 [INF] Applying migration '20251020083217_InitFullDb'.
+2025-10-20 11:39:56.319 +03:00 [INF] Applying migration '20251020083929_FixStaticSeedDates'.
+2025-10-20 11:45:15.355 +03:00 [ERR] Failed executing DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM orders."__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-20 11:45:15.728 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-10-20 11:45:15.747 +03:00 [INF] Applying migration '20251020083217_InitFullDb'.
+2025-10-20 11:45:15.834 +03:00 [INF] Applying migration '20251020083929_FixStaticSeedDates'.
+2025-10-20 11:45:15.858 +03:00 [INF] Applying migration '20251020084501_FixDBSchema'.
+2025-10-20 11:45:15.875 +03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.suppliers SET SCHEMA catalog_db;
+2025-10-20 11:47:03.513 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM orders."__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-20 11:47:03.877 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'orders') THEN
+        CREATE SCHEMA orders;
+    END IF;
+END $EF$;
+CREATE TABLE IF NOT EXISTS orders."__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2025-10-20 11:47:03.888 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-10-20 11:47:03.889 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE orders."__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-10-20 11:47:03.890 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM orders."__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-10-20 11:47:03.901 +03:00 [INF] Applying migration '20251020083217_InitFullDb'.
+2025-10-20 11:47:03.956 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'catalog') THEN
+        CREATE SCHEMA catalog;
+    END IF;
+END $EF$;
+2025-10-20 11:47:03.957 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'orders') THEN
+        CREATE SCHEMA orders;
+    END IF;
+END $EF$;
+2025-10-20 11:47:03.960 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.categories (
+    "CategoryId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" text NOT NULL,
+    CONSTRAINT "PK_categories" PRIMARY KEY ("CategoryId")
+);
+2025-10-20 11:47:03.961 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE orders.customers (
+    "CustomerId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" text NOT NULL,
+    "Email" text NOT NULL,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_customers" PRIMARY KEY ("CustomerId")
+);
+2025-10-20 11:47:03.963 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.suppliers (
+    "SupplierId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" text NOT NULL,
+    "Country" text NOT NULL,
+    "Rating" numeric NOT NULL,
+    CONSTRAINT "PK_suppliers" PRIMARY KEY ("SupplierId")
+);
+2025-10-20 11:47:03.965 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE orders.orders (
+    "OrderId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "CustomerId" integer NOT NULL,
+    "SupplierId" integer,
+    "Status" text NOT NULL,
+    "CreatedAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_orders" PRIMARY KEY ("OrderId"),
+    CONSTRAINT "FK_orders_customers_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES orders.customers ("CustomerId") ON DELETE CASCADE,
+    CONSTRAINT "FK_orders_suppliers_SupplierId" FOREIGN KEY ("SupplierId") REFERENCES catalog.suppliers ("SupplierId")
+);
+2025-10-20 11:47:03.967 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.products (
+    "ProductId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "SupplierId" integer NOT NULL,
+    "Name" text NOT NULL,
+    "Price" numeric NOT NULL,
+    "StockQuantity" integer NOT NULL,
+    CONSTRAINT "PK_products" PRIMARY KEY ("ProductId"),
+    CONSTRAINT "FK_products_suppliers_SupplierId" FOREIGN KEY ("SupplierId") REFERENCES catalog.suppliers ("SupplierId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.969 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE orders.payments (
+    "PaymentId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "OrderId" integer NOT NULL,
+    "Amount" numeric NOT NULL,
+    "PaidAt" timestamp with time zone NOT NULL,
+    CONSTRAINT "PK_payments" PRIMARY KEY ("PaymentId"),
+    CONSTRAINT "FK_payments_orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES orders.orders ("OrderId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.971 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE orders.order_items (
+    "OrderId" integer NOT NULL,
+    "ProductId" integer NOT NULL,
+    "Quantity" integer NOT NULL,
+    "UnitPrice" numeric NOT NULL,
+    CONSTRAINT "PK_order_items" PRIMARY KEY ("OrderId", "ProductId"),
+    CONSTRAINT "FK_order_items_orders_OrderId" FOREIGN KEY ("OrderId") REFERENCES orders.orders ("OrderId") ON DELETE CASCADE,
+    CONSTRAINT "FK_order_items_products_ProductId" FOREIGN KEY ("ProductId") REFERENCES catalog.products ("ProductId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.972 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.product_categories (
+    "ProductId" integer NOT NULL,
+    "CategoryId" integer NOT NULL,
+    CONSTRAINT "PK_product_categories" PRIMARY KEY ("ProductId", "CategoryId"),
+    CONSTRAINT "FK_product_categories_categories_CategoryId" FOREIGN KEY ("CategoryId") REFERENCES catalog.categories ("CategoryId") ON DELETE CASCADE,
+    CONSTRAINT "FK_product_categories_products_ProductId" FOREIGN KEY ("ProductId") REFERENCES catalog.products ("ProductId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.974 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.product_details (
+    "ProductId" integer NOT NULL,
+    "Description" text,
+    "ShippingTime" text,
+    "ReturnPolicy" text,
+    CONSTRAINT "PK_product_details" PRIMARY KEY ("ProductId"),
+    CONSTRAINT "FK_product_details_products_ProductId" FOREIGN KEY ("ProductId") REFERENCES catalog.products ("ProductId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.976 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE catalog.product_images (
+    "ImageId" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Url" text NOT NULL,
+    "ProductId" integer NOT NULL,
+    CONSTRAINT "PK_product_images" PRIMARY KEY ("ImageId"),
+    CONSTRAINT "FK_product_images_products_ProductId" FOREIGN KEY ("ProductId") REFERENCES catalog.products ("ProductId") ON DELETE CASCADE
+);
+2025-10-20 11:47:03.977 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.categories ("CategoryId", "Name")
+VALUES (1, 'Electronics');
+INSERT INTO catalog.categories ("CategoryId", "Name")
+VALUES (2, 'Books');
+INSERT INTO catalog.categories ("CategoryId", "Name")
+VALUES (3, 'Gadgets');
+2025-10-20 11:47:03.978 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders.customers ("CustomerId", "CreatedAt", "Email", "Name")
+VALUES (1, TIMESTAMPTZ '2025-10-20T08:32:16.804246Z', 'alice@mail.com', 'Alice Johnson');
+INSERT INTO orders.customers ("CustomerId", "CreatedAt", "Email", "Name")
+VALUES (2, TIMESTAMPTZ '2025-10-20T08:32:16.804293Z', 'bob@mail.com', 'Bob Williams');
+2025-10-20 11:47:03.979 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.suppliers ("SupplierId", "Country", "Name", "Rating")
+VALUES (1, 'USA', 'Tech Global', 4.5);
+INSERT INTO catalog.suppliers ("SupplierId", "Country", "Name", "Rating")
+VALUES (2, 'UK', 'Book World', 4.8);
+2025-10-20 11:47:03.980 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders.orders ("OrderId", "CreatedAt", "CustomerId", "Status", "SupplierId")
+VALUES (1, TIMESTAMPTZ '2025-10-20T08:32:16.806029Z', 1, 'Completed', 1);
+INSERT INTO orders.orders ("OrderId", "CreatedAt", "CustomerId", "Status", "SupplierId")
+VALUES (2, TIMESTAMPTZ '2025-10-20T08:32:16.806075Z', 2, 'Pending', 2);
+2025-10-20 11:47:03.981 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.products ("ProductId", "Name", "Price", "StockQuantity", "SupplierId")
+VALUES (1, 'Laptop X1', 999.99, 10, 1);
+INSERT INTO catalog.products ("ProductId", "Name", "Price", "StockQuantity", "SupplierId")
+VALUES (2, 'EF Core Guide', 49.5, 50, 2);
+INSERT INTO catalog.products ("ProductId", "Name", "Price", "StockQuantity", "SupplierId")
+VALUES (3, 'Smartwatch Z', 199.0, 25, 1);
+2025-10-20 11:47:03.982 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders.order_items ("OrderId", "ProductId", "Quantity", "UnitPrice")
+VALUES (1, 1, 1, 999.99);
+INSERT INTO orders.order_items ("OrderId", "ProductId", "Quantity", "UnitPrice")
+VALUES (1, 3, 2, 199.0);
+INSERT INTO orders.order_items ("OrderId", "ProductId", "Quantity", "UnitPrice")
+VALUES (2, 2, 5, 49.5);
+2025-10-20 11:47:03.983 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders.payments ("PaymentId", "Amount", "OrderId", "PaidAt")
+VALUES (1, 1397.99, 1, TIMESTAMPTZ '2025-10-20T08:32:16.806534Z');
+2025-10-20 11:47:03.985 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.product_categories ("CategoryId", "ProductId")
+VALUES (1, 1);
+INSERT INTO catalog.product_categories ("CategoryId", "ProductId")
+VALUES (3, 1);
+INSERT INTO catalog.product_categories ("CategoryId", "ProductId")
+VALUES (2, 2);
+INSERT INTO catalog.product_categories ("CategoryId", "ProductId")
+VALUES (1, 3);
+INSERT INTO catalog.product_categories ("CategoryId", "ProductId")
+VALUES (3, 3);
+2025-10-20 11:47:03.986 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.product_details ("ProductId", "Description", "ReturnPolicy", "ShippingTime")
+VALUES (1, 'Powerful laptop for development.', '30 days', '2-3 Days');
+INSERT INTO catalog.product_details ("ProductId", "Description", "ReturnPolicy", "ShippingTime")
+VALUES (2, 'Complete guide to Entity Framework Core.', '15 days', '1-2 Days');
+INSERT INTO catalog.product_details ("ProductId", "Description", "ReturnPolicy", "ShippingTime")
+VALUES (3, 'Smartwatch with health monitoring.', '30 days', '2-3 Days');
+2025-10-20 11:47:03.987 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO catalog.product_images ("ImageId", "ProductId", "Url")
+VALUES (1, 1, '/img/laptop-x1.jpg');
+INSERT INTO catalog.product_images ("ImageId", "ProductId", "Url")
+VALUES (2, 1, '/img/laptop-x1-side.jpg');
+INSERT INTO catalog.product_images ("ImageId", "ProductId", "Url")
+VALUES (3, 3, '/img/smartwatch-z.jpg');
+2025-10-20 11:47:03.988 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_order_items_ProductId" ON orders.order_items ("ProductId");
+2025-10-20 11:47:03.989 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_orders_CustomerId" ON orders.orders ("CustomerId");
+2025-10-20 11:47:03.989 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_orders_SupplierId" ON orders.orders ("SupplierId");
+2025-10-20 11:47:03.990 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_payments_OrderId" ON orders.payments ("OrderId");
+2025-10-20 11:47:03.991 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_product_categories_CategoryId" ON catalog.product_categories ("CategoryId");
+2025-10-20 11:47:03.992 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_product_images_ProductId" ON catalog.product_images ("ProductId");
+2025-10-20 11:47:03.993 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_products_SupplierId" ON catalog.products ("SupplierId");
+2025-10-20 11:47:03.997 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT setval(
+    pg_get_serial_sequence('catalog.categories', 'CategoryId'),
+    GREATEST(
+        (SELECT MAX("CategoryId") FROM catalog.categories) + 1,
+        nextval(pg_get_serial_sequence('catalog.categories', 'CategoryId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('orders.customers', 'CustomerId'),
+    GREATEST(
+        (SELECT MAX("CustomerId") FROM orders.customers) + 1,
+        nextval(pg_get_serial_sequence('orders.customers', 'CustomerId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('catalog.suppliers', 'SupplierId'),
+    GREATEST(
+        (SELECT MAX("SupplierId") FROM catalog.suppliers) + 1,
+        nextval(pg_get_serial_sequence('catalog.suppliers', 'SupplierId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('orders.orders', 'OrderId'),
+    GREATEST(
+        (SELECT MAX("OrderId") FROM orders.orders) + 1,
+        nextval(pg_get_serial_sequence('orders.orders', 'OrderId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('catalog.products', 'ProductId'),
+    GREATEST(
+        (SELECT MAX("ProductId") FROM catalog.products) + 1,
+        nextval(pg_get_serial_sequence('catalog.products', 'ProductId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('orders.payments', 'PaymentId'),
+    GREATEST(
+        (SELECT MAX("PaymentId") FROM orders.payments) + 1,
+        nextval(pg_get_serial_sequence('orders.payments', 'PaymentId'))),
+    false);
+SELECT setval(
+    pg_get_serial_sequence('catalog.product_images', 'ImageId'),
+    GREATEST(
+        (SELECT MAX("ImageId") FROM catalog.product_images) + 1,
+        nextval(pg_get_serial_sequence('catalog.product_images', 'ImageId'))),
+    false);
+2025-10-20 11:47:03.998 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders."__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20251020083217_InitFullDb', '9.0.10');
+2025-10-20 11:47:03.999 +03:00 [INF] Applying migration '20251020083929_FixStaticSeedDates'.
+2025-10-20 11:47:04.023 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE orders.customers SET "CreatedAt" = TIMESTAMPTZ '2024-10-15T00:00:00Z'
+WHERE "CustomerId" = 1;
+2025-10-20 11:47:04.024 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE orders.customers SET "CreatedAt" = TIMESTAMPTZ '2024-10-16T00:00:00Z'
+WHERE "CustomerId" = 2;
+2025-10-20 11:47:04.025 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE orders.orders SET "CreatedAt" = TIMESTAMPTZ '2024-10-17T00:00:00Z'
+WHERE "OrderId" = 1;
+2025-10-20 11:47:04.025 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE orders.orders SET "CreatedAt" = TIMESTAMPTZ '2024-10-18T00:00:00Z'
+WHERE "OrderId" = 2;
+2025-10-20 11:47:04.026 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE orders.payments SET "PaidAt" = TIMESTAMPTZ '2024-10-17T10:30:00Z'
+WHERE "PaymentId" = 1;
+2025-10-20 11:47:04.026 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders."__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20251020083929_FixStaticSeedDates', '9.0.10');
+2025-10-20 11:47:04.027 +03:00 [INF] Applying migration '20251020084501_FixDBSchema'.
+2025-10-20 11:47:04.040 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'catalog_db') THEN
+        CREATE SCHEMA catalog_db;
+    END IF;
+END $EF$;
+2025-10-20 11:47:04.040 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM pg_namespace WHERE nspname = 'orders_db') THEN
+        CREATE SCHEMA orders_db;
+    END IF;
+END $EF$;
+2025-10-20 11:47:04.041 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.suppliers SET SCHEMA catalog_db;
+2025-10-20 11:47:04.042 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.products SET SCHEMA catalog_db;
+2025-10-20 11:47:04.043 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.product_images SET SCHEMA catalog_db;
+2025-10-20 11:47:04.044 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.product_details SET SCHEMA catalog_db;
+2025-10-20 11:47:04.045 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.product_categories SET SCHEMA catalog_db;
+2025-10-20 11:47:04.046 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE orders.payments SET SCHEMA orders_db;
+2025-10-20 11:47:04.046 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE orders.orders SET SCHEMA orders_db;
+2025-10-20 11:47:04.047 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE orders.order_items SET SCHEMA orders_db;
+2025-10-20 11:47:04.048 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE orders.customers SET SCHEMA orders_db;
+2025-10-20 11:47:04.049 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE catalog.categories SET SCHEMA catalog_db;
+2025-10-20 11:47:04.050 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO orders."__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20251020084501_FixDBSchema', '9.0.10');

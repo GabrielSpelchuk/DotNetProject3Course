@@ -1,105 +1,103 @@
 ﻿using AutoMapper;
-using Dapper;
-using Project.BLL.Services.Interfaces;
-using Project.DAL.Entities;
-using Project.DAL.Implementations;
-using Project.DAL.Repositories;
-using Project.DAL.Repositories.Interfaces;
-using static Project.BLL.Dtos.OrderDtos;
+using Microsoft.EntityFrameworkCore;
+using Project.BLL.Dtos.Customers;
+using Project.BLL.Dtos.Orders;
+using Project.BLL.Query;
+using Project.DAL.Uow;
+using Project.Domain.Entities;
 
 namespace Project.BLL.Services
 {
-    public class OrderService : IOrderService
+    public class OrderService
     {
-        private readonly IDbConnectionFactory _connFactory;
+        private readonly IUnitOfWork _uow;
         private readonly IMapper _mapper;
 
-        public OrderService(IDbConnectionFactory connFactory, IMapper mapper)
+        public OrderService(IUnitOfWork uow, IMapper mapper)
         {
-            _connFactory = connFactory;
+            _uow = uow;
             _mapper = mapper;
         }
-
-        public async Task<int> CreateOrderAsync(CreateOrderDto dto, CancellationToken ct)
+        
+        public async Task<int> CreateAsync(CreateOrderDto dto, CancellationToken ct)
         {
-            await using var uow = new UnitOfWork(_connFactory);
-            await uow.BeginTransactionAsync();
-            try
-            {
-                var order = new Order { CustomerId = dto.CustomerId, SupplierId = dto.SupplierId, Status = "Pending" };
-                var orderId = await uow.Orders.CreateAsync(order, ct);
-
-                var items = new List<OrderItem>();
-                foreach (var it in dto.Items)
-                {
-                    var price = await uow.Products.GetPriceAsync(it.ProductId, ct) ?? it.UnitPrice;
-                    items.Add(new OrderItem { OrderId = orderId, ProductId = it.ProductId, Quantity = it.Quantity, UnitPrice = price });
-                }
-
-                await uow.Orders.AddItemsAsync(orderId, items, ct);
-
-                await uow.CommitAsync();
-                return orderId;
-            }
-            catch
-            {
-                await uow.RollbackAsync();
-                throw;
-            }
+            var order = _mapper.Map<Order>(dto);
+            await _uow.Orders.AddAsync(order, ct);
+            await _uow.CommitAsync(ct);
+            return order.OrderId;
         }
-
-        public async Task<OrderDto> GetOrderAsync(int orderId, CancellationToken ct)
+        
+        public async Task<IEnumerable<OrderDto>> GetAllAsync(QueryParams qp, CancellationToken ct)
         {
-            await using var uow = new UnitOfWork(_connFactory);
-            await uow.BeginTransactionAsync();
-            var order = await uow.Orders.GetByIdAsync(orderId, ct);
-            return order == null ? null : _mapper.Map<OrderDto>(order);
+            var query = _uow.Orders.Query()
+                .Include(o => o.Customer)
+                .Include(o => o.Items).ThenInclude(i => i.Product)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(qp.Search))
+                query = query.Where(o => o.Customer.Name.Contains(qp.Search));
+
+            var result = await query
+                .Skip(qp.Skip)
+                .Take(qp.PageSize)
+                .ToListAsync(ct);
+
+            return _mapper.Map<IEnumerable<OrderDto>>(result);
         }
-
-        public async Task ConfirmOrderAsync(int orderId, CancellationToken ct)
+        
+        public async Task<OrderDto?> GetByIdAsync(int id, CancellationToken ct)
         {
-            await using var uow = new UnitOfWork(_connFactory);
-            await uow.BeginTransactionAsync(ct);
-            try
-            {
-                var order = await uow.Orders.GetByIdAsync(orderId, ct);
-                if (order == null)
-                    throw new KeyNotFoundException($"Order {orderId} not found");
+            var entity = await _uow.Orders.Query()
+                .Include(o => o.Customer)
+                .Include(o => o.Items).ThenInclude(i => i.Product)
+                .FirstOrDefaultAsync(o => o.OrderId == id, ct);
 
-                decimal total = order.Items.Sum(i => i.Quantity * i.UnitPrice);
-
-                var updateSql = @"UPDATE orders_db.orders 
-                          SET status = @Status 
-                          WHERE order_id = @OrderId;";
-
-                await uow.Connection.ExecuteAsync(updateSql,
-                    new { Status = "Confirmed", OrderId = orderId },
-                    uow.Transaction);
-
-                var insertPayment = @"INSERT INTO orders_db.payments (order_id, amount, paid_at) 
-                              VALUES (@OrderId, @Amount, NOW()) 
-                              ON CONFLICT (order_id) DO NOTHING;";
-
-                await uow.Connection.ExecuteAsync(insertPayment,
-                    new { OrderId = orderId, Amount = total },
-                    uow.Transaction);
-
-                await uow.CommitAsync();
-            }
-            catch
-            {
-                await uow.RollbackAsync();
-                throw;
-            }
+            return _mapper.Map<OrderDto?>(entity);
         }
-
-
-        public async Task<IEnumerable<OrderDto>> GetOrdersByCustomerAsync(int customerId, CancellationToken ct)
+        
+        public async Task UpdateAsync(int id, UpdateOrderDto dto, CancellationToken ct)
         {
-            await using var uow = new UnitOfWork(_connFactory);
-            await uow.BeginTransactionAsync();
-            var orders = await uow.Orders.GetByCustomerIdAsync(customerId, ct);
-            return _mapper.Map<IEnumerable<OrderDto>>(orders);
+            var entity = await _uow.Orders.GetByIdAsync(id, ct)
+                ?? throw new KeyNotFoundException($"Order {id} not found");
+
+            _mapper.Map(dto, entity);
+            _uow.Orders.Update(entity);
+            await _uow.CommitAsync(ct);
+        }
+        
+        public async Task DeleteAsync(int id, CancellationToken ct)
+        {
+            var entity = await _uow.Orders.GetByIdAsync(id, ct)
+                ?? throw new KeyNotFoundException($"Order {id} not found");
+
+            _uow.Orders.Remove(entity);
+            await _uow.CommitAsync(ct);
+        }
+        
+        public async Task ConfirmAsync(int id, CancellationToken ct)
+        {
+            var order = await _uow.Orders.Query()
+                .Include(o => o.Items).ThenInclude(i => i.Product)
+                .FirstOrDefaultAsync(o => o.OrderId == id, ct);
+
+            if (order == null)
+                throw new KeyNotFoundException($"Order {id} not found");
+
+            if (!order.Items.Any())
+                throw new InvalidOperationException("Cannot confirm order with no items");
+
+            order.Status = "Confirmed";
+            var total = order.Items.Sum(i => i.Quantity * i.Product!.Price);
+
+            var payment = new Payment
+            {
+                OrderId = order.OrderId,
+                Amount = total,
+                PaidAt = DateTime.UtcNow
+            };
+
+            await _uow.Payments.AddAsync(payment, ct);
+            await _uow.CommitAsync(ct);
         }
     }
 }

@@ -1,0 +1,12 @@
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/bin/Debug/net8.0/Project.Domain.deps.json
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/bin/Debug/net8.0/Project.Domain.dll
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/bin/Debug/net8.0/Project.Domain.pdb
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.AssemblyInfoInputs.cache
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.AssemblyInfo.cs
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.csproj.CoreCompileInputs.cache
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.sourcelink.json
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.dll
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/refint/Project.Domain.dll
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/Project.Domain.pdb
+/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/Debug/net8.0/ref/Project.Domain.dll
