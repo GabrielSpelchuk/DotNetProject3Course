@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project/Project.API.csproj": {}
+    "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Project.API.csproj": {}
   },
   "projects": {
-    "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/Project.BLL.csproj": {
+    "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\Project.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/Project.BLL.csproj",
+        "projectUniqueName": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\Project.BLL.csproj",
         "projectName": "Project.BLL",
-        "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/Project.BLL.csproj",
-        "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/obj/",
+        "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\Project.BLL.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/gabriel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/Project.DAL.csproj": {
-                "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/Project.DAL.csproj"
+              "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\Project.DAL.csproj": {
+                "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\Project.DAL.csproj"
               },
-              "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj": {
-                "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj"
+              "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj"
               }
             }
           }
@@ -45,7 +51,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -75,45 +81,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.20, 8.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/Project.DAL.csproj": {
+    "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\Project.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/Project.DAL.csproj",
+        "projectUniqueName": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\Project.DAL.csproj",
         "projectName": "Project.DAL",
-        "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/Project.DAL.csproj",
-        "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.DAL/obj/",
+        "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\Project.DAL.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/gabriel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj": {
-                "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj"
+              "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj"
               }
             }
           }
@@ -128,7 +134,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -168,37 +174,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.20, 8.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj": {
+    "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj",
+        "projectUniqueName": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj",
         "projectName": "Project.Domain",
-        "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj",
-        "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/obj/",
+        "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/gabriel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -217,7 +223,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -233,48 +239,48 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.20, 8.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project/Project.API.csproj": {
+    "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Project.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project/Project.API.csproj",
+        "projectUniqueName": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Project.API.csproj",
         "projectName": "Project.API",
-        "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project/Project.API.csproj",
-        "packagesPath": "/home/gabriel/.nuget/packages/",
-        "outputPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project/obj/",
+        "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Project.API.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/gabriel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/Project.BLL.csproj": {
-                "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.BLL/Project.BLL.csproj"
+              "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\Project.BLL.csproj": {
+                "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.BLL\\Project.BLL.csproj"
               },
-              "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj": {
-                "projectPath": "/home/gabriel/Study/3Course/1stSemester/DotNet/DotNetProject3Course/Project.Domain/Project.Domain.csproj"
+              "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Domain\\Project.Domain.csproj"
               }
             }
           }
@@ -289,7 +295,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -367,16 +373,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.20, 8.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[8.0.20, 8.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -385,7 +381,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

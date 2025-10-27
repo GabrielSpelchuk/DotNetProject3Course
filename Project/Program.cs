@@ -20,8 +20,8 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 
-var connectionString = builder.Configuration.GetConnectionString("Postgres")
-    ?? "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=postgres";
+var connectionString = builder.Configuration.GetConnectionString("postgres")
+    ?? "Host=localhost;Port=5432;Username=postgres;Password=12345;Database=postgres;";
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {

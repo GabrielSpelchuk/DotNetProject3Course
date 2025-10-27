@@ -1,21 +1,46 @@
 [
   {
     "ContainingType": "CustomersController",
-    "Method": "Create",
+    "Method": "GetAll",
     "RelativePath": "api/Customers",
-    "HttpMethod": "POST",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "Project.BLL.Dtos.CustomerDtos\u002BCreateCustomerDto",
-        "IsRequired": true
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Skip",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Project.BLL.Dtos.CustomerDtos\u002BCustomerDto",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.BLL.Dtos.Customers.CustomerDto, Project.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -27,7 +52,33 @@
   },
   {
     "ContainingType": "CustomersController",
-    "Method": "Get",
+    "Method": "Create",
+    "RelativePath": "api/Customers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Customers.CreateCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomersController",
+    "Method": "GetById",
     "RelativePath": "api/Customers/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -41,7 +92,95 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Project.BLL.Dtos.CustomerDtos\u002BCustomerDto",
+        "Type": "Project.BLL.Dtos.Customers.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CustomersController",
+    "Method": "Update",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Customers.UpdateCustomerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CustomersController",
+    "Method": "Delete",
+    "RelativePath": "api/Customers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.BLL.Dtos.Orders.OrderDto, Project.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +200,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Project.BLL.Dtos.OrderDtos\u002BCreateOrderDto",
+        "Type": "Project.BLL.Dtos.Orders.CreateOrderDto",
         "IsRequired": true
       }
     ],
@@ -79,7 +218,7 @@
   },
   {
     "ContainingType": "OrdersController",
-    "Method": "Get",
+    "Method": "GetById",
     "RelativePath": "api/Orders/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -93,7 +232,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Project.BLL.Dtos.OrderDtos\u002BOrderDto",
+        "Type": "Project.BLL.Dtos.Orders.OrderDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -102,6 +241,43 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "OrdersController",
+    "Method": "Update",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Customers.UpdateOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OrdersController",
+    "Method": "Delete",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "OrdersController",
@@ -120,15 +296,351 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "OrdersController",
-    "Method": "GetByCustomer",
-    "RelativePath": "api/Orders/customer/{customerId}",
+    "ContainingType": "Project.API.Controllers.PaymentsController",
+    "Method": "GetAll",
+    "RelativePath": "api/payments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.BLL.Dtos.Orders.PaymentDto, Project.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.PaymentsController",
+    "Method": "Create",
+    "RelativePath": "api/payments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Orders.CreatePaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.PaymentsController",
+    "Method": "GetById",
+    "RelativePath": "api/payments/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customerId",
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Project.BLL.Dtos.Orders.PaymentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductsController",
+    "Method": "GetAll",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.BLL.Dtos.Products.ProductDto, Project.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductsController",
+    "Method": "Create",
+    "RelativePath": "api/products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Products.CreateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductsController",
+    "Method": "GetById",
+    "RelativePath": "api/products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Project.BLL.Dtos.Products.ProductDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductsController",
+    "Method": "Update",
+    "RelativePath": "api/products/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Products.UpdateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.ProductsController",
+    "Method": "Delete",
+    "RelativePath": "api/products/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.SuppliersController",
+    "Method": "GetAll",
+    "RelativePath": "api/suppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Project.BLL.Dtos.Suppliers.SupplierDto, Project.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.SuppliersController",
+    "Method": "Create",
+    "RelativePath": "api/suppliers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Suppliers.CreateSupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.SuppliersController",
+    "Method": "GetById",
+    "RelativePath": "api/suppliers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Project.BLL.Dtos.Suppliers.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Project.API.Controllers.SuppliersController",
+    "Method": "Update",
+    "RelativePath": "api/suppliers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Project.BLL.Dtos.Suppliers.UpdateSupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.API.Controllers.SuppliersController",
+    "Method": "Delete",
+    "RelativePath": "api/suppliers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }

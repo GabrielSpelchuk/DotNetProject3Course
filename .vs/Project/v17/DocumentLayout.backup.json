@@ -1,13 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\3ndCourse\\1stSemerter\\.Net\\Project\\",
+  "WorkspaceRootPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3ndcourse\\1stsemerter\\.net\\project\\project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.dal\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3ndcourse\\1stsemerter\\.net\\project\\project\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,25 +43,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\AppDbContextFactory.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContextFactory.cs",
+              "RelativeToolTip": "Project.DAL\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:38:22.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Project.DAL\\AppDbContext.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContext.cs",
+              "RelativeToolTip": "Project.DAL\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:37:42.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBcAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:58:08.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\appsettings.json",
+              "RelativeDocumentMoniker": "Project\\appsettings.json",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\appsettings.json",
+              "RelativeToolTip": "Project\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T09:11:08.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\Study\\3ndCourse\\1stSemerter\\.Net\\Project\\Project\\Controllers\\OrdersController.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\Study\\3ndCourse\\1stSemerter\\.Net\\Project\\Project\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Project\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T10:01:50.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CustomersController.cs",
-              "DocumentMoniker": "D:\\Study\\3ndCourse\\1stSemerter\\.Net\\Project\\Project\\Controllers\\CustomersController.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "Project\\Controllers\\CustomersController.cs",
-              "ToolTip": "D:\\Study\\3ndCourse\\1stSemerter\\.Net\\Project\\Project\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "Project\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T09:59:09.028Z",
               "EditorCaption": ""
