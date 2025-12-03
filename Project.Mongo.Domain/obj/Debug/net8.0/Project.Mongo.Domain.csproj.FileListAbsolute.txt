@@ -1,0 +1,13 @@
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\bin\Debug\net8.0\Project.Mongo.Domain.deps.json
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\bin\Debug\net8.0\Project.Mongo.Domain.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\bin\Debug\net8.0\Project.Mongo.Domain.pdb
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.csproj.AssemblyReference.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.AssemblyInfoInputs.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.AssemblyInfo.cs
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.csproj.CoreCompileInputs.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.sourcelink.json
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\refint\Project.Mongo.Domain.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\Project.Mongo.Domain.pdb
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Domain\obj\Debug\net8.0\ref\Project.Mongo.Domain.dll

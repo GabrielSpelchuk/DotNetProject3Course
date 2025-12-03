@@ -1,0 +1,16 @@
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\bin\Debug\net8.0\Project.Mongo.Infrastructure.deps.json
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\bin\Debug\net8.0\Project.Mongo.Infrastructure.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\bin\Debug\net8.0\Project.Mongo.Infrastructure.pdb
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\bin\Debug\net8.0\Project.Mongo.Domain.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\bin\Debug\net8.0\Project.Mongo.Domain.pdb
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.csproj.AssemblyReference.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.AssemblyInfoInputs.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.AssemblyInfo.cs
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.sourcelink.json
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project..56CE94BE.Up2Date
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\refint\Project.Mongo.Infrastructure.dll
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\Project.Mongo.Infrastructure.pdb
+D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project.Mongo.Infrastructure\obj\Debug\net8.0\ref\Project.Mongo.Infrastructure.dll

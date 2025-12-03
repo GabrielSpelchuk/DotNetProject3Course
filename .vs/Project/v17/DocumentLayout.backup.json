@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.dal\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.mongo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|solutionrelative:project.mongo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19E04FD7-1482-4433-8264-CDB66AA7D86A}|Project.DAL\\Project.DAL.csproj|solutionrelative:project.dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}|Project.Mongo.Application\\Project.Mongo.Application.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.mongo.application\\queries\\getreviewsbyproduct\\getreviewsbyproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}|Project.Mongo.Application\\Project.Mongo.Application.csproj|solutionrelative:project.mongo.application\\queries\\getreviewsbyproduct\\getreviewsbyproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.mongo.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|solutionrelative:project.mongo.api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.mongo.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|solutionrelative:project.mongo.api\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7598B44-220F-42CC-83A0-9C5433E18144}|Project\\Project.API.csproj|solutionrelative:project\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|d:\\study\\3rdcourse\\1stsemester\\dotnet\\dotnetproject3course\\project.mongo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DE67190-3456-4348-A162-4E6A4DC7952A}|Project.Mongo.API\\Project.Mongo.API.csproj|solutionrelative:project.mongo.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,80 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContextFactory.cs",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Project.DAL\\AppDbContextFactory.cs",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContextFactory.cs",
-              "RelativeToolTip": "Project.DAL\\AppDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T10:38:22.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Project.DAL\\AppDbContext.cs",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.DAL\\AppDbContext.cs",
-              "RelativeToolTip": "Project.DAL\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GetReviewsByProductQuery.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.Application\\Queries\\GetReviewsByProduct\\GetReviewsByProductQuery.cs",
+              "RelativeDocumentMoniker": "Project.Mongo.Application\\Queries\\GetReviewsByProduct\\GetReviewsByProductQuery.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.Application\\Queries\\GetReviewsByProduct\\GetReviewsByProductQuery.cs",
+              "RelativeToolTip": "Project.Mongo.Application\\Queries\\GetReviewsByProduct\\GetReviewsByProductQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T10:37:42.578Z",
+              "WhenOpened": "2025-12-03T12:16:22.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Program.cs",
-              "RelativeDocumentMoniker": "Project\\Program.cs",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Program.cs",
-              "RelativeToolTip": "Project\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBcAAABWAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Project.Mongo.API\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Project.Mongo.API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T09:58:08.729Z",
+              "WhenOpened": "2025-12-03T12:01:54.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\appsettings.json",
-              "RelativeDocumentMoniker": "Project\\appsettings.json",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\appsettings.json",
-              "RelativeToolTip": "Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T09:11:08.026Z",
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Project.Mongo.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "Project.Mongo.API\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:59:21.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Project\\Controllers\\OrdersController.cs",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Project\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T10:01:50.018Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Project.Mongo.API\\appsettings.json",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\appsettings.json",
+              "RelativeToolTip": "Project.Mongo.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-03T11:53:38.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "Project\\Controllers\\CustomersController.cs",
-              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "Project\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Program.cs",
+              "RelativeDocumentMoniker": "Project.Mongo.API\\Program.cs",
+              "ToolTip": "D:\\Study\\3rdCourse\\1stSemester\\DotNet\\DotNetProject3Course\\Project.Mongo.API\\Program.cs",
+              "RelativeToolTip": "Project.Mongo.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T09:59:09.028Z",
+              "WhenOpened": "2025-12-03T10:59:24.879Z",
               "EditorCaption": ""
             }
           ]

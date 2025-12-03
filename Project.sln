@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BLL", "Project.BLL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Domain", "Project.Domain\Project.Domain.csproj", "{C342A40A-E745-41B7-BA2D-F4EC9DAB08E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Mongo.API", "Project.Mongo.API\Project.Mongo.API.csproj", "{8DE67190-3456-4348-A162-4E6A4DC7952A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Mongo.Domain", "Project.Mongo.Domain\Project.Mongo.Domain.csproj", "{57CEE8C3-1654-423C-9047-65718E22E36A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Mongo.Infrastructure", "Project.Mongo.Infrastructure\Project.Mongo.Infrastructure.csproj", "{2D5268D3-DD62-4BC5-A493-E5B48D6101C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.Mongo.Application", "Project.Mongo.Application\Project.Mongo.Application.csproj", "{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +41,22 @@ Global
 		{C342A40A-E745-41B7-BA2D-F4EC9DAB08E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C342A40A-E745-41B7-BA2D-F4EC9DAB08E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C342A40A-E745-41B7-BA2D-F4EC9DAB08E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE67190-3456-4348-A162-4E6A4DC7952A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE67190-3456-4348-A162-4E6A4DC7952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE67190-3456-4348-A162-4E6A4DC7952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE67190-3456-4348-A162-4E6A4DC7952A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57CEE8C3-1654-423C-9047-65718E22E36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CEE8C3-1654-423C-9047-65718E22E36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CEE8C3-1654-423C-9047-65718E22E36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CEE8C3-1654-423C-9047-65718E22E36A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D5268D3-DD62-4BC5-A493-E5B48D6101C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5268D3-DD62-4BC5-A493-E5B48D6101C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5268D3-DD62-4BC5-A493-E5B48D6101C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5268D3-DD62-4BC5-A493-E5B48D6101C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B025D1-D4BC-44CC-A472-3E2D71E8DAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

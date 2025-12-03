@@ -1,0 +1,55 @@
+2025-12-03 14:03:39.000 +02:00 [INF] Now listening on: https://localhost:7206
+2025-12-03 14:03:39.082 +02:00 [INF] Now listening on: http://localhost:5110
+2025-12-03 14:03:39.278 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-03 14:03:39.280 +02:00 [INF] Hosting environment: Development
+2025-12-03 14:03:39.282 +02:00 [INF] Content root path: D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project
+2025-12-03 14:03:41.240 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger - null null
+2025-12-03 14:03:41.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger - 301 0 null 369.9162ms
+2025-12-03 14:03:41.615 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-12-03 14:03:41.767 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 152.0279ms
+2025-12-03 14:03:41.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui.css - null null
+2025-12-03 14:03:41.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui-bundle.js - null null
+2025-12-03 14:03:41.775 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-03 14:03:41.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-03 14:03:41.803 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 27.3804ms
+2025-12-03 14:03:41.810 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-12-03 14:03:41.812 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-03 14:03:41.812 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-03 14:03:41.815 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-03 14:03:41.823 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui.css - 200 152034 text/css 48.3034ms
+2025-12-03 14:03:41.826 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 50.8856ms
+2025-12-03 14:03:41.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 53.9218ms
+2025-12-03 14:03:41.899 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.4972ms
+2025-12-03 14:03:42.235 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-12-03 14:03:42.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.8589ms
+2025-12-03 14:03:42.276 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/favicon-32x32.png - null null
+2025-12-03 14:03:42.286 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-03 14:03:42.289 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/favicon-32x32.png - 200 628 image/png 13.3569ms
+2025-12-03 14:04:14.768 +02:00 [INF] Application is shutting down...
+2025-12-03 14:24:33.109 +02:00 [INF] Now listening on: https://localhost:7206
+2025-12-03 14:24:33.166 +02:00 [INF] Now listening on: http://localhost:5110
+2025-12-03 14:24:33.312 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-03 14:24:33.314 +02:00 [INF] Hosting environment: Development
+2025-12-03 14:24:33.315 +02:00 [INF] Content root path: D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project
+2025-12-03 14:24:33.678 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-12-03 14:24:33.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 289.5546ms
+2025-12-03 14:24:33.978 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-03 14:24:33.991 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 12.9915ms
+2025-12-03 14:24:34.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-12-03 14:24:34.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.9457ms
+2025-12-03 14:24:34.407 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-12-03 14:24:34.451 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.1735ms
+2025-12-03 14:24:56.026 +02:00 [INF] Application is shutting down...
+2025-12-03 14:25:36.022 +02:00 [INF] Now listening on: https://localhost:7206
+2025-12-03 14:25:36.083 +02:00 [INF] Now listening on: http://localhost:5110
+2025-12-03 14:25:36.228 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-03 14:25:36.230 +02:00 [INF] Hosting environment: Development
+2025-12-03 14:25:36.231 +02:00 [INF] Content root path: D:\Study\3rdCourse\1stSemester\DotNet\DotNetProject3Course\Project
+2025-12-03 14:25:36.563 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-12-03 14:25:36.816 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 255.5556ms
+2025-12-03 14:25:36.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-03 14:25:36.869 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-12-03 14:25:36.881 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 11.5273ms
+2025-12-03 14:25:36.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.6269ms
+2025-12-03 14:25:37.125 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-12-03 14:25:37.177 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.847ms
